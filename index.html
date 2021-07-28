@@ -13,20 +13,38 @@
 
     <link href="./res/materialize.min-1.0.0.css" rel="stylesheet">
     <link href="./res/player.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148029185-2"></script>
+<script src="./res/materialize.min.js"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-148029185-2');
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, null);
+  });
 </script>
 
 </head>
 
 <body class="mybody" style="margin-top:0px">
+
+
+
+  <nav>
+    <div class="nav-wrapper teal lighten">
+      <a href="#!" class="brand-logo">串串英语</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://gitter.im/ccenglish/community" target="_blank">聊天室</a></li>
+        <li><a href="https://mp.weixin.qq.com/s/K699th4_swuZ4l01TxtDww" target="_blank">合作</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="https://gitter.im/ccenglish/community" target="_blank">聊天室</a></li>
+    <li><a href="https://mp.weixin.qq.com/s/K699th4_swuZ4l01TxtDww" target="_blank">合作</a></li>
+  </ul>
+
 
 
   <div class="row">
