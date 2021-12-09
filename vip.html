@@ -11,8 +11,16 @@
     <meta name="keywords" content="TED,english,ccplayer,ccreader,英语,串串英语,播放器,阅读器,学英语,神器,成人,学生,词汇,单词,词组,惯用语,考试,高考,四级,六级,四六级,雅思,托福,GRE,考研,美剧,英剧,经济学人,VOA,youtube,油管,工具,老友记,小猪佩奇,friends,peppa pig" />
     <meta name="robots" content="all">
 
+    <script src="./res/jquery-1.5.2.min.js"></script>
+    <script src="./res/materialize.min-1.0.0.js"></script>
+
     <link href="./res/materialize.min-1.0.0.css" rel="stylesheet">
     <link href="./res/player.css" rel="stylesheet">
+    <script>
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+    </script>
 
 </head>
 
@@ -38,13 +46,58 @@
   <br><br>
 
 
-  <div class="collection">
-    <a href="#!" class="collection-item"><span class="new badge"></span>005  还珠格格第一部(中配英字)</a>
-    <a href="#!" class="collection-item"><span class="new badge"></span>004  老友记第二季</a>
-    <a href="#!" class="collection-item">003  老友记第一季</a>
-    <a href="#!" class="collection-item">002  功夫熊猫(1)</a>
-    <a href="#!" class="collection-item">001  阿甘正传</a>
-  </div>
+<ul class="collapsible">
+
+
+  <li>
+    <div class="collapsible-header teal lighten-3">2K基础词汇量</div>
+    <div class="collapsible-body">
+	  <div class="collection">
+	    <a href="#!" class="collection-item">小猪佩奇第一季</a>
+	    <a href="#!" class="collection-item">小猪佩奇第二季</a>
+	    <a href="#!" class="collection-item">小猪佩奇第三季</a>
+    	  </div>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="collapsible-header teal lighten-4">3K基础词汇量</div>
+    <div class="collapsible-body">
+	  <div class="collection">
+	    <a href="#!" class="collection-item">小猪佩奇第四季</a>
+	    <a href="#!" class="collection-item">还珠格格第一部(中配英字)</a>
+	    <a href="#!" class="collection-item">功夫熊猫(1)</a>
+	    <a href="#!" class="collection-item">阿甘正传</a>
+    	  </div>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="collapsible-header teal lighten-3">4K基础词汇量</div>
+    <div class="collapsible-body">
+	  <div class="collection">
+	    <a href="#!" class="collection-item"><span class="new badge"></span>绝望主妇第一季</a>
+	    <a href="#!" class="collection-item">老友记第一季</a>
+	    <a href="#!" class="collection-item">老友记第二季</a>
+	    <a href="#!" class="collection-item">末代皇帝</a>
+    	  </div>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="collapsible-header teal lighten-4">5K基础词汇量</div>
+    <div class="collapsible-body">
+	  <div class="collection">
+	    <a href="#!" class="collection-item">BBC 蓝色星球(1)</a>
+    	  </div>
+    </div>
+  </li>
+
+
+</ul>
 
 
 </body>
